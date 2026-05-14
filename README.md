@@ -1,6 +1,17 @@
-# fivem-lls-addon
+# fivem-lls-addon (Custom Fork for Extended LuaGLM Syntax)
 
 Lua types for FiveM and RedM to use with [Lua Language Server](https://luals.github.io/).
+
+> **Note:** This is a custom fork that includes a heavily modified `plugin.lua` to fully support modern FiveM LuaGLM syntax extensions (Power Patches). 
+> 
+> **Added Syntax Support:**
+> - `in` unpacking (`local x, y in pos`)
+> - Set constructors (`{ .a, .b }`)
+> - `defer` keyword block syntax
+> - `<const>` and `<close>` attributes support when defaulting to LuaJIT
+> - 'Safe Navigation' operator (`?.`) enhancements
+> 
+> The plugin safely ignores block comments (`/* */`, `[[ ]]`), line comments (`--`), and string literals when applying these transformations, ensuring your code remains untouched.
 
 ## Usage
 
